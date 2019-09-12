@@ -230,10 +230,13 @@ function WriteText() {
 
 }
 
-function slideIt(time) {
-	setInterval(WriteText, time);
+// function slideIt(time) {
+// 	setInterval(WriteText, time);
+// }
+//
+// slideIt(3000);
+
+var text = document.querySelector('#text');
+text.onclick = function () {
+    WriteText();
 }
-
-slideIt(3000);
-
-
